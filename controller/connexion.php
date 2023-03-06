@@ -1,10 +1,6 @@
 <?php
 
-$dsn = 'mysql:dbname=todolist;host=127.0.0.1';
-$user = 'root';
-$password = null;
-
-$pdo = new PDO($dsn, $user, $password);
+$pdo = getDb();
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
 
